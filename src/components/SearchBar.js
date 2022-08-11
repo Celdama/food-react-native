@@ -1,8 +1,10 @@
+import { Ionicons } from '@expo/vector-icons';
 import { StyleSheet, Text, View } from 'react-native';
 
 const SearchBar = () => {
   return (
     <View style={styles.background}>
+      <Ionicons name='ios-search' size={24} color='black' />
       <Text>Search bar</Text>
     </View>
   );
