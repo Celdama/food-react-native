@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 const SearchBar = () => {
   return (
     <View style={styles.background}>
-      <Ionicons name='ios-search' size={24} color='black' />
+      <Ionicons name='ios-search' size={30} color='black' />
       <Text>Search bar</Text>
     </View>
   );
