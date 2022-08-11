@@ -1,20 +1,30 @@
 import { Ionicons } from '@expo/vector-icons';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, TextInput, View } from 'react-native';
 
 const SearchBar = () => {
   return (
-    <View style={styles.background}>
-      <Ionicons name='ios-search' size={30} color='black' />
-      <Text>Search bar</Text>
+    <View style={styles.backgroundStyle}>
+      <Ionicons name='ios-search' style={styles.iconStyle} color='black' />
+      <TextInput style={styles.inputStyle} placeholder='Search' />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  background: {
+  backgroundStyle: {
     backgroundColor: '#F0EEEE',
     height: 50,
     borderRadius: 5,
+    marginHorizontal: 15,
+    flexDirection: 'row',
+  },
+  inputStyle: {
+    flex: 1,
+    fontSize: 18,
+  },
+  iconStyle: {
+    fontSize: 35,
+    alignSelf: 'center',
     marginHorizontal: 15,
   },
 });
