@@ -3,12 +3,12 @@ import { StyleSheet, TextInput, View } from 'react-native';
 
 const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
   return (
-    <View style={styles.backgroundStyle}>
-      <Ionicons name='ios-search' style={styles.iconStyle} color='black' />
+    <View style={styles.background}>
+      <Ionicons name='ios-search' style={styles.icon} color='black' />
       <TextInput
         autoCapitalize='none'
         autoCorrect={false}
-        style={styles.inputStyle}
+        style={styles.input}
         placeholder='Search'
         value={term}
         onChangeText={onTermChange}
@@ -19,19 +19,20 @@ const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
 };
 
 const styles = StyleSheet.create({
-  backgroundStyle: {
+  background: {
     marginTop: 10,
     backgroundColor: '#F0EEEE',
     height: 50,
     borderRadius: 5,
     marginHorizontal: 15,
     flexDirection: 'row',
+    marginBottom: 10,
   },
-  inputStyle: {
+  input: {
     flex: 1,
     fontSize: 18,
   },
-  iconStyle: {
+  icon: {
     fontSize: 35,
     alignSelf: 'center',
     marginHorizontal: 15,
